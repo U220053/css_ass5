@@ -1,5 +1,6 @@
 /* import font awesome */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+/* Global reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ p {
   font-weight: 100;
   font-size: 0.9rem;
 }
-/* navbar  */
+/* Navbar styles */
 .nav {
   background-color: #292929;
   height: 4rem;
@@ -36,9 +37,11 @@ p {
   padding-right: 8vw;
   align-items: center;
 }
+/* Hamburger menu icon */
 #menu {
   visibility: hidden;
 }
+/* Navbar items styles */
 .nav-items {
   width: 30%;
   height: 100%;
@@ -46,7 +49,7 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-.nav-item {
+.navelement {
   color: white;
   padding: 0.6vw;
   font-size: 0.9rem;
@@ -55,7 +58,7 @@ p {
   border-radius: 5px;
   transition: background-color 0.5s, color 0.5s;
 }
-.nav-item:hover {
+.navelement:hover {
   color: black;
   cursor: pointer;
   background-color: white;
@@ -63,7 +66,7 @@ p {
 
 /* Section 1 */
 
-.section-1 {
+.part-1 {
   background-color: #ddf0ff;
   height: 30rem;
   width: 100%;
@@ -72,6 +75,7 @@ p {
   display: flex;
   align-items: center;
 }
+/* Section 1 content styles */
 .section1-content {
   height: 85%;
   width: 100%;
@@ -108,6 +112,7 @@ button:hover i {
   left: 75%;
   opacity: 1;
 }
+/* Button 1 styles */
 .button-1 {
   background-color: #1095ff;
 }
@@ -115,6 +120,7 @@ button:hover i {
   background-color: #0780e0;
   cursor: pointer;
 }
+/* Button 2 styles */
 .btn2 {
   background-color: #00bc6e;
 }
@@ -145,7 +151,7 @@ button:hover i {
 
 /* Section 2 */
 
-.section-2 {
+.part-2 {
   background-color: #68edb6;
   height: 30rem;
   width: 100%;
@@ -154,6 +160,7 @@ button:hover i {
   padding-left: 8vw;
   padding-right: 8vw;
 }
+/* Section 2 content styles */
 .section2-content {
   height: 85%;
   width: 100%;
@@ -192,12 +199,13 @@ button:hover i {
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
   transition: scale 0.2s ease, box-shadow 0.2s ease;
 }
+/* Section card styles */
 .section-card {
   background-color: rgb(255, 255, 255);
   height: auto;
   width: 100%;
 }
-/*  cards section styling */
+/* Grid section styling */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -210,17 +218,17 @@ button:hover i {
   justify-content: center;
   color: black;
   padding: 2vh;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  display: flex;
   border-radius: 0.5em;
   margin: 10px;
   box-sizing: border-box;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
 
   transition: scale 0.2s ease, color 0.2s ease;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-
+/* Grid element body styles */
 .grid-element-body {
   width: 12rem;
   height: 12rem;
@@ -233,21 +241,22 @@ button:hover i {
 .grid-element-body .logo {
   height: 30%;
   width: 30%;
-  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 1 / 1;
+
   font-size: 1.3rem;
 }
 
 .grid-element-body .contents {
   height: 63%;
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-inline: 1vw;
+  display: flex;
 }
 .grid-element-body p {
   line-height: 1.3rem;
@@ -392,7 +401,7 @@ button:hover i {
     padding-right: 5vw;
   }
 
-  .section-1 {
+  .part-1 {
     background-color: #ddf0ff;
     height: 35rem;
     width: 100%;
@@ -402,7 +411,6 @@ button:hover i {
     align-items: center;
   }
   .section1-content {
-    /* background-color: red; */
     height: 85%;
     width: 100%;
     display: flex;
@@ -410,7 +418,6 @@ button:hover i {
     justify-content: space-between;
   }
   .section1-content .text-section {
-    /* background-color: yellow; */
     height: 100%;
     width: 60%;
     display: flex;
@@ -420,13 +427,12 @@ button:hover i {
     padding-right: 2vw;
   }
   .section1-content .img-box {
-    /* background-color: blue; */
     height: 15em;
     width: 15em;
     aspect-ratio: 1 / 1;
   }
 
-  .section-2 {
+  .part-2 {
     background-color: #68edb6;
     height: 40rem;
     width: 100%;
@@ -517,7 +523,6 @@ button:hover i {
     box-sizing: border-box;
   }
   .grid-element-body {
-    /* background-color: red; */
     width: 25vw;
     height: 12rem;
     display: flex;
@@ -527,13 +532,11 @@ button:hover i {
   }
 
   .grid-element-body .logo {
-    /* background-color: yellow; */
     width: 3em;
     height: 3em;
     aspect-ratio: 1 / 1;
   }
   .grid-element-body .contents {
-    /* background-color: blue; */
     height: 50%;
     width: 100%;
   }
@@ -547,7 +550,7 @@ button:hover i {
     display: flex;
     align-items: center;
   }
-  #label {
+  #name {
     visibility: hidden;
   }
   #menu {
@@ -556,7 +559,7 @@ button:hover i {
   .nav {
     height: 4rem;
   }
-  .section-1 {
+  .part-1 {
     height: 100vh;
     width: 100%;
     padding-left: 5vw;
@@ -577,7 +580,6 @@ button:hover i {
     order: 1;
   }
   .section1-content .text-section {
-    /* background-color: yellow; */
     height: 63%;
     width: 100%;
     display: flex;
@@ -589,7 +591,7 @@ button:hover i {
     height: 35%;
     width: 100%;
   }
-  .section-2 {
+  .part-2 {
     height: 100vh;
     width: 100%;
     padding-left: 5vw;
@@ -610,7 +612,6 @@ button:hover i {
     order: 2;
   }
   .section2-content .text-section {
-    /* background-color: yellow; */
     height: 63%;
     width: 100%;
     display: flex;
@@ -620,7 +621,6 @@ button:hover i {
     padding-right: 2vw;
   }
   .section2-content .img-box {
-    /* background-color: blue; */
     height: 35%;
     width: 100%;
   }
@@ -628,7 +628,7 @@ button:hover i {
   button {
     padding: 0.5rem;
     padding-right: 2rem;
-    /* background-color: blue; */
+
     color: white;
     border: none;
   }
@@ -648,7 +648,6 @@ button:hover i {
     box-sizing: border-box;
   }
   .grid-element-body {
-    /* background-color: red; */
     width: 85vw;
     height: 10rem;
     display: flex;
@@ -658,13 +657,11 @@ button:hover i {
   }
 
   .grid-element-body .logo {
-    /* background-color: yellow; */
     width: 3em;
     height: 3em;
     aspect-ratio: 1 / 1;
   }
   .grid-element-body .contents {
-    /* background-color: blue; */
     height: 50%;
     width: 80%;
     display: flex;
